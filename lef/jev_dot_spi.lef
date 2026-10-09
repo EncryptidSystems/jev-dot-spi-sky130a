@@ -1,0 +1,172 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO jev_dot_spi
+  CLASS BLOCK ;
+  FOREIGN jev_dot_spi ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 450.675 BY 461.395 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.340 10.640 25.940 449.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 177.940 10.640 179.540 449.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 331.540 10.640 333.140 449.040 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 30.030 444.820 31.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 183.210 444.820 184.810 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 336.390 444.820 337.990 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 449.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 449.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 328.240 10.640 329.840 449.040 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 26.730 444.820 28.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 179.910 444.820 181.510 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 333.090 444.820 334.690 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 364.520 0.600 365.120 ;
+    END
+  END clk
+  PIN irq
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.383400 ;
+    PORT
+      LAYER met2 ;
+        RECT 124.290 0.000 124.570 0.280 ;
+    END
+  END irq
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.213000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.130 0.000 80.410 0.280 ;
+    END
+  END rst
+  PIN spi_cs_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 91.170 0.000 91.450 0.280 ;
+    END
+  END spi_cs_n
+  PIN spi_miso
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.383400 ;
+    PORT
+      LAYER met2 ;
+        RECT 125.210 0.000 125.490 0.280 ;
+    END
+  END spi_miso
+  PIN spi_miso_oe
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.383400 ;
+    PORT
+      LAYER met2 ;
+        RECT 83.810 0.000 84.090 0.280 ;
+    END
+  END spi_miso_oe
+  PIN spi_mosi
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 68.040 0.600 68.640 ;
+    END
+  END spi_mosi
+  PIN spi_sclk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 78.290 0.000 78.570 0.280 ;
+    END
+  END spi_sclk
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 445.010 448.990 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 444.820 448.885 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 444.820 449.040 ;
+      LAYER met2 ;
+        RECT 6.990 0.560 441.040 448.985 ;
+        RECT 6.990 0.280 78.010 0.560 ;
+        RECT 78.850 0.280 79.850 0.560 ;
+        RECT 80.690 0.280 83.530 0.560 ;
+        RECT 84.370 0.280 90.890 0.560 ;
+        RECT 91.730 0.280 124.010 0.560 ;
+        RECT 124.850 0.280 124.930 0.560 ;
+        RECT 125.770 0.280 441.040 0.560 ;
+      LAYER met3 ;
+        RECT 0.600 365.520 434.175 448.965 ;
+        RECT 1.000 364.120 434.175 365.520 ;
+        RECT 0.600 69.040 434.175 364.120 ;
+        RECT 1.000 67.640 434.175 69.040 ;
+        RECT 0.600 10.715 434.175 67.640 ;
+      LAYER met4 ;
+        RECT 26.975 49.815 174.240 401.025 ;
+        RECT 176.640 49.815 177.540 401.025 ;
+        RECT 179.940 49.815 327.840 401.025 ;
+        RECT 330.240 49.815 331.140 401.025 ;
+        RECT 333.540 49.815 420.145 401.025 ;
+      LAYER met5 ;
+        RECT 108.220 186.410 222.060 206.500 ;
+        RECT 108.220 96.100 222.060 178.310 ;
+  END
+END jev_dot_spi
+END LIBRARY
+
